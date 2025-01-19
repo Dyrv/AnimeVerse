@@ -1,0 +1,337 @@
+/* Reset de margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #28272b, #636363, #28282b);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;  
+  min-height: 100vh;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Container de pesquisa */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding-bottom: 50px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgb(33,37,41);
+  backdrop-filter: blur(10px);
+  width: 90%;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.search-container label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+
+
+#genreSelectGroup {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#genreSelect {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+  background-color: #45a049;
+}
+
+/* Resultados dos animes */
+#animeResults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.anime {
+  width: 200px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionar transição suave */
+}
+
+.anime:hover {
+  transform: scale(1.1); /* Aumenta o tamanho em 10% */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adicionar uma leve sombra */
+}
+.anime img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.anime h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.anime p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.anime p strong {
+  color: #4CAF50;
+}
+
+/* Estilo para quando não há resultados */
+#animeResults.empty {
+  text-align: center;
+  color: #999;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+nav {
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* Adicione esta seção ao seu arquivo style.css */
+/* Adicione esta seção ao seu arquivo style.css */
+.navbar .button {
+  margin-left: 10px; /* Ajuste a margem conforme necessário */
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-brand img {
+  margin-right: 10px; /* Ajuste a margem conforme necessário */
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .menu a {
+  margin-left: 10px; /* Ajuste a margem conforme necessário */
+  text-decoration: none;
+  color:red;
+}
+
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red; 
+  background-color: #28272b; 
+  border: 2px solid red; 
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+.search-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#animeResults {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.search-input {
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.search-tags {
+  gap: 0.5rem;
+}
+
+.tag {
+  background: #f3f4f6;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}
+
+.recent-searches {
+  border-top: 2px solid #f3f4f6;
+}
+
+.recent-item {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.recent-item:hover {
+  background: #f3f4f6;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+.menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.checkboxa{
+  color: white;
+}
+
+/* Adicione esta seção ao seu arquivo style.css */
+.loader {
+  width: fit-content;
+  font-size: 17px;
+  font-family: monospace;
+  line-height: 1.4;
+  font-weight: bold;
+  background: 
+    linear-gradient(#000 0 0) left ,
+    linear-gradient(#000 0 0) right;
+  background-repeat: no-repeat; 
+  border-right: 5px solid #0000;
+  border-left: 5px solid #0000;
+  background-origin: border-box;
+  position: relative;
+  animation: l9-0 2s infinite;
+}
+.loader::before {
+  content: "Loading";
+}
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 22px;
+  height: 60px;
+  background: 
+   linear-gradient(90deg,#000 4px,#0000 0 calc(100% - 4px),#000 0) bottom            /22px 20px,
+   linear-gradient(90deg,red  4px,#0000 0 calc(100% - 4px),red  0) bottom 10px left 0/22px 6px,
+   linear-gradient(#000 0 0) bottom 3px left 0  /22px 8px,
+   linear-gradient(#000 0 0) bottom 0   left 50%/8px  16px;
+ background-repeat: no-repeat;
+ animation: l9-1 2s infinite;
+}
+@keyframes l9-0 {
+  0%, 25%    { background-size: 50% 100%; }
+  25.1%, 75% { background-size: 0 0, 50% 100%; }
+  75.1%, 100% { background-size: 0 0, 0 0; }
+}
+@keyframes l9-1 {
+  25%   { background-position: bottom, bottom 54px left 0, bottom 3px left 0, bottom 0 left 50%; left: 0; }
+  25.1% { background-position: bottom, bottom 10px left 0, bottom 3px left 0, bottom 0 left 50%; left: 0; }
+  50%   { background-position: bottom, bottom 10px left 0, bottom 3px left 0, bottom 0 left 50%; left: calc(100% - 22px); }
+  75%   { background-position: bottom, bottom 54px left 0, bottom 3px left 0, bottom 0 left 50%; left: calc(100% - 22px); }
+  75.1% { background-position: bottom, bottom 10px left 0, bottom 3px left 0, bottom 0 left 50%; left: calc(100% - 22px); }
+}
+
+/* Estilo para o pop-up */
+.popup {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  color: white;
+  text-align: center;
+}
+
+.popup-overlay {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

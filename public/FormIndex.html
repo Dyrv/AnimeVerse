@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./images/aniverse_logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/FormStyle.css">
+    <script src="../index.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <a href="index.html"><img src="./images/aniverse_logo.png" width="75" height="75" class="d-inline-block" alt=""></a>
+            <form id="signupForm">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <button>Sign up</button>
+            </form>
+        </div>
+        <div class="login">
+            <form id="loginForm">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="forms.js"></script>
+</body>
+</html>

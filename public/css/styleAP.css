@@ -1,0 +1,45 @@
+/* styleAP.css */
+
+body {
+  background: linear-gradient(to bottom, #28272b, #636363, #28282b);
+  color: #ffffff;
+}
+
+h1, h2 {
+  color: #e60000; /* Vermelho */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.border {
+  border: 2px solid #333;
+}
+
+.ratio-16x9 {
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.character {
+  margin-bottom: 20px;
+}
+
+.character img {
+  max-width: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+  border: 2px solid #333;
+}
+
+.character p {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.character p strong {
+  color: #e60000; /* Vermelho */
+}
